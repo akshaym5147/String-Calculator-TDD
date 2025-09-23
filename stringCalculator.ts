@@ -41,3 +41,6 @@ const withNegetiveNumbers = stringCalculator("-1,5");
 console.log('withNegetiveNumbers', withNegetiveNumbers);
 const withNumbersGtrThan1000 = stringCalculator("1,1000,1001");
 console.log('withNumbersGtrThan1000', withNumbersGtrThan1000);
+
+const withNSizeDelimiter = stringCalculator("//[***]\n1***2***3");
+console.log('withNSizeDelimiter', withNSizeDelimiter);
