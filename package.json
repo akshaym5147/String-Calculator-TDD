@@ -1,0 +1,23 @@
+{
+  "name": "string-calculator-tdd",
+  "version": "1.0.0",
+  "description": "\"# String-Calculator-TDD\"",
+  "main": "index.js",
+  "scripts": {
+    "run-calculator": "npx tsc && node stringCalculator.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshaym5147/String-Calculator-TDD.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshaym5147/String-Calculator-TDD/issues"
+  },
+  "homepage": "https://github.com/akshaym5147/String-Calculator-TDD#readme",
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
+}
