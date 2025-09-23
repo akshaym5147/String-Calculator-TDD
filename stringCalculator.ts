@@ -6,6 +6,7 @@ const getEscapedRegEx = (str?: string) => {
 }
 
 const stringCalculator = (numbers: string) => {
+    console.log('Input -', JSON.stringify(numbers));
     let copyNumbers = numbers;
     const regMultiDelimitersMatch = copyNumbers.match(MULTI_DELIMITERS_REGEX);
 
@@ -45,25 +46,25 @@ const stringCalculator = (numbers: string) => {
 }
 
 const commaSeperatedNums = stringCalculator("1,5");
-console.log('commaSeperatedNums', commaSeperatedNums);
+console.log('commaSeperatedNums', commaSeperatedNums, '\n');
 
 const largeCommaSeperatedNums = stringCalculator("2,6,0,7,9,1,0,3,4,8,1,1,9,2,1,8,1,3,5,3");
-console.log('largeCommaSeperatedNums', largeCommaSeperatedNums);
+console.log('largeCommaSeperatedNums', largeCommaSeperatedNums, '\n');
 
 const numsWithNewLines = stringCalculator("1\n2,3");
-console.log('numsWithNewLines', numsWithNewLines);
+console.log('numsWithNewLines', numsWithNewLines, '\n');
 
 const numsWithSingleTypeDelimiters = stringCalculator("//;\n1;2;3");
-console.log('numsWithSingleTypeDelimiters', numsWithSingleTypeDelimiters);
+console.log('numsWithSingleTypeDelimiters', numsWithSingleTypeDelimiters, '\n');
 
 const numsWithNegetiveNumbers = stringCalculator("-1,5");
-console.log('numsWithNegetiveNumbers', numsWithNegetiveNumbers);
+console.log('numsWithNegetiveNumbers', numsWithNegetiveNumbers, '\n');
 
 const numsWithGtrThan1000 = stringCalculator("1,1000,1001");
-console.log('numsWithGtrThan1000', numsWithGtrThan1000);
+console.log('numsWithGtrThan1000', numsWithGtrThan1000, '\n');
 
 const numsWithNSizeDelimiter = stringCalculator("//[***]\n1***2***3");
-console.log('numsWithNSizeDelimiter', numsWithNSizeDelimiter);
+console.log('numsWithNSizeDelimiter', numsWithNSizeDelimiter, '\n');
 
 const numsWithMultipleTypesDelimiters = stringCalculator("//[*][%]\n1*2%3");
-console.log('numsWithMultipleTypesDelimiters', numsWithMultipleTypesDelimiters);
+console.log('numsWithMultipleTypesDelimiters', numsWithMultipleTypesDelimiters, '\n');
